@@ -12,7 +12,7 @@ const HomeIntro = () => {
             <h3 className="home-education">Full Stack Web Developer</h3>
             <div className="home-buttons">
               <a
-                href="https://drive.google.com/file/d/1ydL7cgEUuBXQiPUupVrWigps1XVGBW9n/view?usp=sharing"
+                href="https://drive.google.com/file/d/1AJHiX37UGVYNdvKkrpVwKsrBsJUw1edd/view?usp=sharing"
                 target="_blank"
                 className="button button-ghost"
               >
