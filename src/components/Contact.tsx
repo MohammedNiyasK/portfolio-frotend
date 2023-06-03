@@ -1,7 +1,8 @@
 import "./Contact.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-//import axios from "axios";
+import axios from "axios";
+const apiUrl = "https://portfolio-backend-9bae.onrender.com"
 
 const Contact = () => {
   const formik = useFormik({
@@ -18,16 +19,16 @@ const Contact = () => {
       message: Yup.string().required("Message is required"),
     }),
     onSubmit: (values) => {
-      // axios
-      //   .post("/api/submit", values)
-      //   .then((response) => {
-      //     // Handle successful submission
-      //     console.log(response.data);
-      //   })
-      //   .catch((error) => {
-      //     // Handle submission error
-      //     console.error(error);
-      //   });
+      axios
+        .post(apiUrl+"/portfolio/submit", values)
+        .then((response) => {
+          // Handle successful submission
+          console.log(response.data);
+        })
+        .catch((error) => {
+          // Handle submission error
+          console.error(error);
+        });
       console.log(values)
       formik.setValues({ 
         name: '',
