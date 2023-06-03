@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
 import HomePage from './components/Pages/HomePage';
 import ProjectsPage from './components/Pages/ProjectsPage';

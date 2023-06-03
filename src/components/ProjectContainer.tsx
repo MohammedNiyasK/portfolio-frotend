@@ -1,7 +1,8 @@
 import ProjectCard from "./ProjectCard";
 
+
 const ProjectContainer = () => {
-  const workData = [1,2,3]
+  const workData = ["1","2","3"]
   return (
     <>
       <section className="work section" id="work">
@@ -9,7 +10,7 @@ const ProjectContainer = () => {
         <h2 className="section-title">Recent Works</h2>
         <div className="work-container container grid">
           {
-            workData.map(data => <ProjectCard /> )
+            workData.map(() => <ProjectCard/> )
           }
          
         </div>

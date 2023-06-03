@@ -1,6 +1,7 @@
-import React from 'react'
+
 
 const ProjectCard = () => {
+  
   return (
    
         <div className="work-card">
